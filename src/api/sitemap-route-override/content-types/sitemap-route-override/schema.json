@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sitemap_route_overrides",
+  "info": {
+    "singularName": "sitemap-route-override",
+    "pluralName": "sitemap-route-overrides",
+    "displayName": "站点地图路由覆盖",
+    "description": "Manual sitemap route rules"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "includeInSitemap": {
+      "type": "boolean",
+      "default": true
+    },
+    "changefreq": {
+      "type": "enumeration",
+      "enum": ["always", "hourly", "daily", "weekly", "monthly", "yearly", "never"]
+    },
+    "priority": {
+      "type": "decimal"
+    },
+    "lastmodOverride": {
+      "type": "datetime"
+    },
+    "noindex": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

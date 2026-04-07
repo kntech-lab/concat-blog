@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ranking_link_items",
+  "info": {
+    "displayName": "链接项",
+    "icon": "link",
+    "description": "Simple label-href link entry"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

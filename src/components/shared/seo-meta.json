@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_seo_meta",
+  "info": {
+    "displayName": "SEO 元信息",
+    "icon": "search",
+    "description": "SEO metadata for pages and content"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "canonicalUrl": {
+      "type": "string"
+    },
+    "noindex": {
+      "type": "boolean",
+      "default": false
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

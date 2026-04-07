@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ranking_metric_cards",
+  "info": {
+    "displayName": "指标卡片",
+    "icon": "chartBubble",
+    "description": "Metric summary card for ranking page"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "hint": {
+      "type": "string"
+    }
+  }
+}

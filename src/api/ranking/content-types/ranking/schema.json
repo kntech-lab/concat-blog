@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rankings",
+  "info": {
+    "singularName": "ranking",
+    "pluralName": "rankings",
+    "displayName": "榜单",
+    "description": "Ranking detail page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo-meta"
+    },
+    "primaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-item"
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-item"
+    },
+    "heroAvatars": {
+      "type": "json"
+    },
+    "shareLinks": {
+      "type": "json"
+    },
+    "listTitle": {
+      "type": "string"
+    },
+    "listDescription": {
+      "type": "text"
+    },
+    "initialCount": {
+      "type": "integer",
+      "default": 2
+    },
+    "loadMoreStep": {
+      "type": "integer",
+      "default": 10
+    },
+    "metricCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ranking.metric-card"
+    },
+    "faqItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ranking.faq-item"
+    },
+    "relatedLists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ranking.link-item"
+    },
+    "sidebarCards": {
+      "type": "dynamiczone",
+      "components": ["ranking.sidebar-image-text-cta", "ranking.sidebar-text-cta"]
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ranking-item.ranking-item",
+      "mappedBy": "ranking"
+    }
+  }
+}

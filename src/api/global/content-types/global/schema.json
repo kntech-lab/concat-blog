@@ -4,7 +4,7 @@
   "info": {
     "singularName": "global",
     "pluralName": "globals",
-    "displayName": "Global",
+    "displayName": "全局设置（旧）",
     "description": "Define global settings"
   },
   "options": {

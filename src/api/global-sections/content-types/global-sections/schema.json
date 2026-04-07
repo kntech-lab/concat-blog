@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_sections",
+  "info": {
+    "singularName": "global-sections",
+    "pluralName": "global-sections",
+    "displayName": "全局区块",
+    "description": "Reusable global sections like header/footer/cta"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ranking.link-item"
+    },
+    "footerLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ranking.link-item"
+    },
+    "globalCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-item"
+    }
+  }
+}

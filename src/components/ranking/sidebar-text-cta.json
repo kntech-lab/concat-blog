@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ranking_sidebar_text_cta",
+  "info": {
+    "displayName": "侧边栏文案卡片",
+    "icon": "file",
+    "description": "Sidebar card with paragraphs and CTA"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "paragraphs": {
+      "type": "json"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-item"
+    }
+  }
+}

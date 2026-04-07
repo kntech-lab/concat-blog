@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ranking_faq_items",
+  "info": {
+    "displayName": "常见问题项",
+    "icon": "question",
+    "description": "FAQ item for ranking page"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ranking_sidebar_image_text_cta",
+  "info": {
+    "displayName": "侧边栏图片文案卡片",
+    "icon": "picture",
+    "description": "Sidebar card with image, description and CTA"
+  },
+  "options": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-item"
+    }
+  }
+}

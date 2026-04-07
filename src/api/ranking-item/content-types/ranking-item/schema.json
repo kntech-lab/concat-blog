@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ranking_items",
+  "info": {
+    "singularName": "ranking-item",
+    "pluralName": "ranking-items",
+    "displayName": "榜单条目",
+    "description": "Row item in a ranking list"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ranking": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ranking.ranking",
+      "inversedBy": "items",
+      "required": true
+    },
+    "rank": {
+      "type": "integer",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "follower": {
+      "type": "string"
+    },
+    "typeLabel": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-item"
+    },
+    "profileLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-item"
+    },
+    "score": {
+      "type": "decimal"
+    },
+    "externalUrl": {
+      "type": "string"
+    },
+    "highlightTags": {
+      "type": "json"
+    }
+  }
+}
