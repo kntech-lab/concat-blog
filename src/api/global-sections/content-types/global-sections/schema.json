@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "global_sections",
   "info": {
-    "singularName": "global-sections",
+    "singularName": "global-section",
     "pluralName": "global-sections",
     "displayName": "全局区块",
     "description": "Reusable global sections like header/footer/cta"
