@@ -33,11 +33,23 @@
     "follower": {
       "type": "string"
     },
-    "typeLabel": {
+    "followerLabel": {
+      "type": "string",
+      "default": "Instagram Followers"
+    },
+    "type": {
       "type": "string"
+    },
+    "typeLabel": {
+      "type": "string",
+      "default": "Type"
     },
     "gender": {
       "type": "string"
+    },
+    "genderLabel": {
+      "type": "string",
+      "default": "Gender"
     },
     "bio": {
       "type": "text"
@@ -51,6 +63,19 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.cta-item"
+    },
+    "profilePlatform": {
+      "type": "enumeration",
+      "enum": [
+        "instagram",
+        "youtube",
+        "tiktok",
+        "x",
+        "linkedin",
+        "pinterest",
+        "website"
+      ],
+      "default": "instagram"
     },
     "score": {
       "type": "decimal"

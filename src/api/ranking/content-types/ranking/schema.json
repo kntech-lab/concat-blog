@@ -24,6 +24,12 @@
     "summary": {
       "type": "text"
     },
+    "platform": {
+      "type": "enumeration",
+      "enum": ["Ins", "X", "YT", "TK"],
+      "required": true,
+      "default": "Ins"
+    },
     "coverImage": {
       "type": "media",
       "multiple": false,
