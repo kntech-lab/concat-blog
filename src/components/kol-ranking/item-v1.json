@@ -28,6 +28,9 @@
     "profile_url": {
       "type": "string"
     },
+    "email": {
+      "type": "string"
+    },
     "bio": {
       "type": "text"
     },
