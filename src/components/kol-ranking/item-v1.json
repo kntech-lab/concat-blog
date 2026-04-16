@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_kol_ranking_item_v1",
+  "info": {
+    "displayName": "KOL Ranking Item V1",
+    "description": "Single KOL entry within a kol_ranking list"
+  },
+  "options": {},
+  "attributes": {
+    "rank": {
+      "type": "integer",
+      "required": true
+    },
+    "display_name": {
+      "type": "string",
+      "required": true
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "follower_count": {
+      "type": "integer"
+    },
+    "profile_platform": {
+      "type": "enumeration",
+      "enum": ["instagram", "youtube", "tiktok", "x", "linkedin", "website"],
+      "default": "instagram"
+    },
+    "profile_url": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "tags": {
+      "type": "json",
+      "default": []
+    },
+    "gender": {
+      "type": "string"
+    },
+    "source_kol_id": {
+      "type": "integer"
+    }
+  }
+}

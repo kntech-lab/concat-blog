@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kol_rankings",
+  "info": {
+    "singularName": "kol-ranking",
+    "pluralName": "kol-rankings",
+    "displayName": "KOL Ranking",
+    "description": "v1 KOL ranking with embedded items as repeatable component"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    },
+    "platform": {
+      "type": "enumeration",
+      "enum": ["YT", "Ins", "TK", "X", "Mixed"],
+      "default": "Ins"
+    },
+    "category": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "json",
+      "default": []
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo-meta"
+    },
+    "list_title": {
+      "type": "string"
+    },
+    "list_description": {
+      "type": "text"
+    },
+    "initial_count": {
+      "type": "integer",
+      "default": 20
+    },
+    "load_more_step": {
+      "type": "integer",
+      "default": 10
+    },
+    "schema_version": {
+      "type": "string",
+      "default": "v1"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "kol-ranking.item-v1"
+    }
+  }
+}
