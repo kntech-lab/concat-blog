@@ -8,13 +8,14 @@
     "description": "Concat SEO blog post flat schema"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "title": { "type": "string", "required": true },
     "slug": { "type": "uid", "targetField": "title", "required": true },
     "excerpt": { "type": "text" },
     "content": { "type": "richtext", "required": true },
+    "publish": { "type": "boolean", "default": false },
     "cover_image_url": { "type": "text" },
     "keyword": { "type": "string" },
     "blog_category": {
