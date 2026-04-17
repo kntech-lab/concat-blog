@@ -67,7 +67,7 @@
     "items": {
       "type": "component",
       "repeatable": true,
-      "component": "kol-ranking.item-v1"
+      "component": "kol-ranking.kol-ranking"
     }
   }
 }

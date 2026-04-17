@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_kol_ranking_item_v1",
+  "collectionName": "components_kol_ranking_kol_ranking",
   "info": {
-    "displayName": "KOL Ranking Item V1",
+    "displayName": "KOL Ranking",
     "description": "Single KOL entry within a kol_ranking list"
   },
   "options": {},
