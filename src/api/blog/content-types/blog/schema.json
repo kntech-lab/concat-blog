@@ -17,7 +17,7 @@
     "content": { "type": "richtext", "required": true },
     "publish": { "type": "boolean", "default": false },
     "cover_image_url": { "type": "text" },
-    "keyword": { "type": "string" },
+    "keyword": { "type": "text" },
     "blog_category": {
       "type": "relation",
       "relation": "manyToOne",
